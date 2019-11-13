@@ -1,4 +1,4 @@
-package net.simplifiedcoding
+package net.simplifiedcoding.data.repositories
 
 import retrofit2.Response
 import java.io.IOException

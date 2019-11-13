@@ -1,4 +1,4 @@
-package net.simplifiedcoding
+package net.simplifiedcoding.util
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

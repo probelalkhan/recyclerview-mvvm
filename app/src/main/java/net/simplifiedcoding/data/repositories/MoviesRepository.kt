@@ -1,4 +1,6 @@
-package net.simplifiedcoding
+package net.simplifiedcoding.data.repositories
+
+import net.simplifiedcoding.data.network.MoviesApi
 
 class MoviesRepository(
     private val api: MoviesApi

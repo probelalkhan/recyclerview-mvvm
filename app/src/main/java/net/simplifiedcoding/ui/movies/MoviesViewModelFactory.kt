@@ -1,7 +1,8 @@
-package net.simplifiedcoding
+package net.simplifiedcoding.ui.movies
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import net.simplifiedcoding.data.repositories.MoviesRepository
 
 @Suppress("UNCHECKED_CAST")
 class MoviesViewModelFactory(

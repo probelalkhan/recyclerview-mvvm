@@ -1,4 +1,4 @@
-package net.simplifiedcoding
+package net.simplifiedcoding.data.models
 
 data class Movie(
     val id: Int,

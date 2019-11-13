@@ -1,9 +1,12 @@
-package net.simplifiedcoding
+package net.simplifiedcoding.ui.movies
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.Job
+import net.simplifiedcoding.util.Coroutines
+import net.simplifiedcoding.data.models.Movie
+import net.simplifiedcoding.data.repositories.MoviesRepository
 
 class MoviesViewModel(
     private val repository: MoviesRepository
@@ -18,7 +21,7 @@ class MoviesViewModel(
     fun getMovies() {
         job = Coroutines.ioThenMain(
             { repository.getMovies() },
-            {  _movies.value = it }
+            { _movies.value = it }
         )
     }
 
